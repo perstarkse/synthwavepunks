@@ -156,9 +156,14 @@ main {
     margin: 20px;
   }
   .center-title {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .center-title {
     font-size: 7rem;
   }
-  
 }
 .site-footer {
   background-color: #282a36;
