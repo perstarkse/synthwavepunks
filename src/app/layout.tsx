@@ -1,7 +1,7 @@
 import { Providers } from './providers'
 
 export const metadata = {
-  title: 'wagmi',
+  title: 'SynthwavePunks',
 }
 
 export default function RootLayout({
