@@ -22,5 +22,28 @@ SynthwavePunks is an NFT collection created with stable-diffusion technology, sh
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/synthwavepunks.git
+   git clone https://github.com/perstarkse/synthwavepunks.git
    ```
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+3. Run the development server:
+   ```bash
+   yarn dev
+   ```
+4. Open http://localhost:3000 to view it in the browser.
+
+## Smart Contracts
+
+    - Deployed on the Polygon Mainnet.
+    - ProofOfVisit and SynthwavePunk contracts for NFT minting logic.
+
+## Environment Variables
+
+    - NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID: WalletConnect project ID for wallet connections.
+    - NEXT_PUBLIC_INFURA_API_KEY: Infura key for querying the blockchain.
+
+## License
+
+    - Distributed under the MIT License.
