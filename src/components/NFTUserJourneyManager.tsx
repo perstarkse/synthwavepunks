@@ -7,7 +7,7 @@ import { synthwavePunkContractConfig } from './contracts';
 import { hexToNumber, parseAbiItem } from 'viem';
 import { DisplayMintedNFT } from './DisplayMintedNFT';
 import nftImage from '../assets/1.png';
-import Image from 'next/image'
+import Image from "next/image"
 
 export function NFTUserJourneyManager() {
   const { address } = useAccount();
@@ -45,8 +45,17 @@ export function NFTUserJourneyManager() {
     return <>
     <MintProcess userHasFinished={userHasFinished} />
     <section className="nft-display">
-        <Image src={nftImage} alt="SynthwavePunk #1" layout='responsive' objectFit='contain' priority />
+        <Image
+          src={nftImage}
+          alt="SynthwavePunk #1"
+          priority
+          sizes="100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+            objectFit: "contain"
+          }} />
     </section>
-    </>
+    </>;
   }
 }
